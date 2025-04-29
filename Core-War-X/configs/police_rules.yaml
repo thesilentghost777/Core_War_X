@@ -1,0 +1,3 @@
+police:
+  scan_interval: 1800 # en secondes
+  delete_probability: 70 # en pourcentage
