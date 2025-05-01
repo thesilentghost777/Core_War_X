@@ -1,0 +1,32 @@
+# Arena Configuration
+
+# Basic Settings
+arena_name: "Core War Ghost Arena"
+max_players: 100
+game_duration_hours: 24
+
+# Directory Settings
+warzone_path: "/WarZone"
+backup_path: "/WarZone/backups"
+
+# Player Restrictions
+max_file_size_kb: 1024
+allowed_file_extensions:
+  - ".py"
+  - ".sh"
+  - ".c"
+  - ".cpp"
+
+# Shell Access
+shell_timeout_seconds: 3600
+restricted_commands:
+  - "sudo"
+  - "su"
+  - "chmod"
+  - "chown"
+
+# Game Rules
+survival_check_interval_seconds: 60
+backup_allowed: true
+max_backups_per_player: 5
+file_move_cooldown_seconds: 30

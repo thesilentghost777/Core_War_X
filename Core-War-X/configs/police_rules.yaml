@@ -1,0 +1,24 @@
+# Police (Antivirus) Configuration
+
+# Scan Settings
+scan_interval: 1800  # 30 minutes in seconds
+deletion_probability: 0.7  # 70% chance of deletion
+
+# Scan Behavior
+ignore_patterns:
+  - "^\\."  # Ignore hidden files
+  - "\\.bak$"  # Ignore backup files
+
+# Protection Rules
+protected_files:
+  - ".bashrc"
+  - ".profile"
+
+# Scan Schedule
+quiet_hours:
+  start: "02:00"  # 2 AM
+  end: "04:00"    # 4 AM
+
+# Recovery Settings
+allow_recovery: false
+recovery_timeout: 300  # 5 minutes in seconds
